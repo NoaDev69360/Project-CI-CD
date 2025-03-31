@@ -1,0 +1,26 @@
+name: MonProjet
+version: 1.0.0
+description: |
+  Ce projet est conçu pour démontrer une configuration YAML complète.
+  Il inclut des dépendances, des scripts de démarrage et des paramètres personnalisés.
+
+dependencies:
+  express: 4.12.5
+  mongoose: 6.3.2
+  dotenv: 16.0.1
+
+env:
+  NODE_ENV: development
+  PORT: 3000
+
+script:
+  start: "node index.js"
+
+parametres:
+  performance: 85
+  database:
+    url: "mongodb://localhost:27017/monprojet"
+  configurations:
+    - test
+    - production
+    - staging
